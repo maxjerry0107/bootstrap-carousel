@@ -1,0 +1,138 @@
+#productcarousel {
+	margin: 50px auto;
+}
+.product {
+	width: 340px;
+	img {
+		cursor: pointer;
+	}
+	.new {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		background-color: #f1476e;
+		color: white;
+		height: 60px;
+		width: 60px;
+		border-radius: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 600;
+		font-size: 18px;
+	}
+	.product-desc {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-self: center;
+		justify-content: center;
+		width: 90%;
+		padding: 15px 10px;
+		.rating {
+			span {
+				text-decoration: underline;
+				cursor: pointer;
+				&:hover {
+					color: #f4436c;
+				}
+			}
+			i {
+				color: #f1476e;
+			}
+		}
+		.title {
+			font-size: 1.25em;
+			text-align: center;
+			cursor: pointer;
+			min-height: 50px;
+			margin-top: 5px;
+		}
+		.product-price {
+			display: flex;
+			font-size: 20px;
+			margin: 0 20px;
+			p {
+				color: #f1476e;
+			}
+			span {
+				text-decoration: line-through;
+				margin-right: 8px;
+			}
+		}
+		button {
+			background-color: #f1476e;
+			color: white;
+			border: none;
+			width: 100%;
+			padding: 0.8125em 0em;
+			border-radius: 5px;
+			font-size: 20px;
+			cursor: pointer;
+			&:hover {
+				background-color: #b22d4b;
+			}
+		}
+	}
+}
+.shop-all {
+	background-color: white;
+	color: #f1476e;
+	margin-top: 20px;
+	border: 1px solid #f1476e;
+	border-radius: 5px;
+	padding: 0.8125em 3.375em;
+	&:hover {
+		background-color: #f1476e;
+		color: white;
+	}
+}
+.owl-nav {
+	position: absolute;
+	top: 30%;
+	width: 100%;
+}
+.owl-prev {
+	span {
+		display: block;
+		width: 36px;
+		height: 36px;
+		background: #fff;
+		color: #F36;
+		font-size: 34px;
+		line-height: 28px;
+	}
+	position: absolute;
+	left: -18px;
+}
+.owl-next {
+	span {
+		display: block;
+		width: 36px;
+		height: 36px;
+		background: #fff;
+		color: #F36;
+		font-size: 34px;
+		line-height: 28px;
+	}
+	position: absolute;
+	right: 0px;
+}
+@media (max-width:578px) {
+	.product {
+		width: 260px;
+		.product-desc {
+			.title {
+				font-size: 1rem;
+			}
+		}
+	}
+	.owl-prev {
+		position: absolute;
+		left: 0px;
+	}
+	.owl-next {
+		position: absolute;
+		right: 23px;
+	}
+}
